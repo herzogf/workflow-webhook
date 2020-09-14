@@ -31,6 +31,7 @@ if [ -n "$webhook_auth" ]; then
 fi
 
 curl -X POST \ 
+    -k \
     -H "content-type: application/json" \
     -H "User-Agent: User-Agent: GitHub-Hookshot/760256b" \
     -H "x-hub-signature: sha1=$WEBHOOK_SIGNATURE" \
